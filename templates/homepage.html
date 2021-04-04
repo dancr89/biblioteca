@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title> Python Title</title>
+{% endblock %}
+
+{% block content %}
+<style>
+.container {
+  height: 200px;
+  position: relative;
+  border: 3px solid green;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+
+<h2>{{ brand }}</h2>
+<p>{{ whatwedo }}</p>
+
+<!--<div class="container">-->
+<!--  <div class="center">-->
+    <label> Choose from available books: </label>
+    <select name = "Available Books">
+        <option value="Nemuritorul">Nemuritorul</option>
+        <option value="Punguta cu doi bani">Punguta cu doi bani</option>
+        <option value="Alchimistul">Alchimistul</option>
+        <option value="Sogun Vol1">Sogun Vol1</option>
+    </select>
+<!--  </div>-->
+<!--</div>-->
+
+{% endblock %}
+
+
